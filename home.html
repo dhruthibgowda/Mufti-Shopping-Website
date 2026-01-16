@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fashion Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+  <div class="home-center">
+
+    <!-- LOGO -->
+    <img src="https://franchiseguru.in/wp-content/uploads/2023/01/Mufti-Clothing-Franchise-Logo.png"
+         class="home-logo"
+         alt="Logo">
+
+    <!-- LOGIN BOX -->
+    <div class="login-box">
+      <h3>Login</h3>
+
+      <input type="text" placeholder="Username" id="username">
+      <input type="password" placeholder="Password" id="password">
+
+      <button onclick="login()">Login</button>
+    </div>
+
+    <!-- VIEW COLLECTION BUTTON -->
+    <a href="index.html" class="btn view-btn">View Collection</a>
+
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (user === "" || pass === "") {
+        alert("Please enter username and password");
+      } else {
+        alert("Login successful");
+      }
+    }
+  </script>
+
+</body>
+</html>
